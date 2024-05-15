@@ -1,0 +1,328 @@
+html {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: lato;
+  color: black;
+  background-color: #f0f0f0;
+}
+header {
+background-color: white;
+height: 140px;
+position: static;
+top: 0;
+}
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+nav {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  margin-left: 50px;
+}
+nav a:hover {
+  color: red;
+  transition-delay: 40ms;
+  font-weight: bolder;
+}
+.banner-footer-reszta{
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-size: 28px;
+  font-weight: bolder;
+}
+.banner-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.but-default {
+  height: 55px;
+  background-color: red;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  font-size: 25px;
+  transform: skewX(-20deg);
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.but-default:hover {
+  background-color: #666;
+}
+p {
+  text-decoration: none;
+}
+.but-form {
+  height: 55px;
+  width: 200px;
+  background-color: red;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  font-size: 25px;
+  transform: skewX(-20deg);
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.but-form:hover {
+  background-color: #666;
+}
+.mainkontakt {
+  background-color: #f0f0f0;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+form {
+  background-color: #fff;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #cccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.dropdown {
+  display: inline-block;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 30px;
+  justify-content: center;
+  z-index: 999;
+}
+.dropdown-content a {
+  color: black;
+  padding: 5px 8px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.slogan {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 2s forwards;
+  text-align: center;
+  margin-top: 220px;
+  font-size: 100px;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+.p-firmie-naglowek {
+  font-size: 40px;
+  margin-top: 123px;
+  color: red;
+  font-weight: bolder;
+  margin-left: 33px;
+}
+.p-firmie-text {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 60px;
+  margin-top: 0;
+  display: inline-block;
+  justify-content: center;
+  margin-left: 33px;
+}
+.galeria {
+  max-width: 1200px;
+  margin-left: 18%;
+  margin-top: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.1);
+  
+}
+.zdjecia {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 60px;
+  max-width: 600px;
+}
+.zdjecia img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.text-pod-zdjeciami {
+  margin-top: 10px;
+  font-size: 14px;
+  color: black;
+  text-align: justify;
+}
+.text-pod-zdjeciami-lata {
+  font-weight: 740;
+}
+.but-blog
+{
+  height: 55px;
+  width: 200px;
+  background-color: red;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  font-size: 25px;
+  transform: skewX(-20deg);
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.but-blog:hover
+{
+  background-color: #666;
+}
+.naglowek
+{
+  font-size: 40px;
+  margin-top: 123px;
+  color: red;
+  font-weight: bolder;
+  margin-left: 33px;
+}
+.p-text 
+{
+  font-size: 17px;
+  line-height: 1.6;
+  margin-left: 33px;
+  float: left;
+  width: 60%;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+.naglowek
+{
+  font-size: 44px;
+  margin-top: 10px;
+  color: red;
+  font-weight: bolder;
+  margin-left: 33px;
+  
+}
+ul li{
+  font-size: 17px;
+  line-height: 1.6;
+  margin-left: 33px;
+  float: left;
+  width: 60%;
+  margin-right: 20px;
+
+}
+.zdj-na-podstrony
+{
+  max-width: 600px;
+  min-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    position: static;
+    left: 0;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .nav {
+    font-size: 20px;
+    position: static;
+  }
+  .logo{
+    position: static;
+    left: 0;
+    top: 0;
+  }
+  
+  .p-firmie-naglowek,
+  .p-firmie-text,
+  .naglowek,
+  .p-text,
+  ul li {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 10px;
+    position: static;
+  }
+
+  .mainkontakt {
+    margin-top: 50px;
+  }
+
+  .slogan {
+    margin-top: 150px;
+    font-size: 60px;
+  }
+
+  .galeria {
+    margin-left: 5%;
+  }
+}
+
+
